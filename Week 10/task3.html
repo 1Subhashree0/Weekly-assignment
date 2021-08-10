@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Complete style layout</title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+	<style type="text/css">
+		*{ box-sizing: border-box; }
+		#container{width: 1140px; min-height: 800px; margin: auto auto; border: 2px solid black; border-width: 10PX; border-collapse: separate; border-}
+		body{ font-family: Arial; padding: 30px; background: #9acd32; }
+		.header{ padding: 20px; text-align: center; background: #797d7a; }
+		.header h1 { font-style: 50px; }
+		.topnav{ overflow: hidden; background-color: #F5F5F5; }
+		.topnav a{ float: left; display: block; color: ##F5F5F5; text-align: center; padding: 20PX 16PX; text-decoration: none; }
+		/* Change color on hover */
+.topnav a:hover {
+background-color: #03aae8;
+color: black;
+}
+/* Create two unequal columns that floats next to each
+other */
+/* Left column */
+.leftcolumn { float: left; width: 50%; padding-right: 70px;}
+/* Right column */
+.rightcolumn {
+float: left; width: 50%;
+background-color: #03aae8;
+padding-left: 70px;
+}
+/* Fake image */
+.fakeimg { background-color: #aaa;
+width: 100%; padding: 20px;}
+/* Add a card effect for articles */
+.card {
+background-color: white; padding: 20px;
+margin-top: 80px; border: 1px #ccddee;
+border-radius: 0px 30px 0px 30px;}
+/* Clear floats after the columns */
+.row:after { content: ""; display: table;
+clear: both;
+}
+/* Footer */
+.footer { padding: 20px; text-align: center;
+background: #ddd; margin-top: 60px; width: auto; margin-right: 150px; margin-left: 150px;}
+/* Responsive layout - when the screen is less than
+800px wide, make the two columns stack on top of each
+other instead of next to each other */
+@media screen and (max-width: 800px) {
+.leftcolumn, .rightcolumn {
+width: 100%;
+padding: 0;
+}
+}
+/* Responsive layout - when the screen is less than
+400px wide, make the navigation links stack on top of
+each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.topnav a {
+float: none;
+width: 100%;
+}
+.search_box{
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: #black;
+	height: 45px;
+	border-radius: 45px;
+	padding: 8px;
+}
+.input_box{
+	border: none;
+	outline: none;
+	background: none;
+	float: left;
+	padding: 0;
+	color: black;
+	font-size: 16px;
+	transition: 0.4s all;
+	line-height: 40px;
+	width: 5550px;
+}
+
+.btn{
+	float: right;
+	text-decoration: none;
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50%;
+}
+
+	</style>
+</head>
+<body>
+<div id="container">
+<div class="topnav">
+<a href="https://www.google.com">Home</a>
+<a href="#">Service</a>
+<a href="#">Contact</a>
+<a href="#" style="float:right">More</a>
+</div>
+<div class="header">
+<div class="search_box">
+	<input class="input_box" type="text" name="" placeholder="  Search">
+	<a class="btn" href="#">
+		<i class="fas fa-search"></i>
+	</a>
+</div>
+</div>
+<div class="row">
+<div class="leftcolumn">
+<div class="card">
+<h2>COKA COLA</h2>
+<h5>CEO DR HOO 2000</h5>
+<div class="fakeimg"
+style="height:200px;">Image</div>
+<p>“Enjoy” and “Happiness”</p>
+</div>
+<div class="card">
+<h2>COKA COLA</h2>
+<h5>CEO DR HOO 2000</h5>
+<div class="fakeimg"
+style="height:200px;">Image</div>
+<p>“Enjoy” and “Happiness”</p>
+</div>
+</div>
+<div class="rightcolumn">
+<div class="card">
+<h2>COKA COLA</h2>
+<h5>CEO DR HOO 2000</h5>
+<div class="fakeimg"
+style="height:200px;">Image</div>
+<p>“Enjoy” and “Happiness”</p>
+</div>
+<div class="card">
+<h2>COKA COLA</h2>
+<h5>CEO DR HOO 2000</h5>
+<div class="fakeimg" 
+style="height: 200px"><p>Image</p></div>
+<p>“Enjoy” and “Happiness”</p>
+</div>
+
+</div>
+</div>
+</div>
+<div class="footer">
+<h2>Footer</h2>
+</div>
+</div>
+
+</body>
+</html>
